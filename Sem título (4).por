@@ -1,0 +1,38 @@
+programa {
+  funcao inicio() {
+    // Declaração de variáveis.
+    real notaA, notaB
+    real media
+  
+
+    // Solicitando dados para o usuário.
+    escreva("Digite a sua nota A: ")
+    leia(notaA)
+
+    escreva("Digite a sua nota B: ")
+    leia(notaB)
+
+
+    // Realizando cálculos.
+    media = (notaA + notaB) / 2
+
+    // Exibir resultados.
+    limpa()
+    escreva("=== Exibindo resultados ===")
+    escreva("\nNota A: ", notaA)
+    escreva("\nNota B: ", notaB)
+    escreva("\nMédia: ", media)
+
+
+    se (media >=6)
+    {escreva("\naluno aprovado")
+    escreva("\nParabens você passou!")}
+
+    senao {escreva("\naluno reprovado")}
+
+
+
+
+
+  }
+}

@@ -1,0 +1,45 @@
+programa {
+  funcao inicio() {
+    // Desclaração de variáveis.
+    real primeiroNumero, segundoNumero
+    real operacao, resultado
+
+    // Solicitando dados para o usúario.
+    escreva("Digite o valor A: ")
+    leia(primeiroNumero)
+
+    escreva("Digite o valor B: ")
+    leia(segundoNumero)
+
+    escreva("Escolha a operação: \n1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão\n")
+    leia(operacao)
+
+
+
+    // Realizando casos
+    escolha(operacao) {
+      caso 1:
+      resultado = primeiroNumero + segundoNumero
+      escreva("A soma dos números é: ", resultado)
+      pare
+      caso 2:
+      resultado = primeiroNumero - segundoNumero
+      escreva("A subtração dos números é: ", resultado)
+      pare
+      caso 3:
+      resultado = primeiroNumero * segundoNumero
+      escreva("A multiplicação dos números é: ", resultado)
+      pare
+      caso 4:
+      resultado = primeiroNumero / segundoNumero
+      escreva("A divisão dos números é: ", resultado)
+      pare
+
+
+
+
+
+    }
+
+  }
+}
