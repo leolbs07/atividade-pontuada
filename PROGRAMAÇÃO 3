@@ -1,12 +1,12 @@
 programa {
   funcao inicio() {
-    //declarando variável
+    //declarando variÃ¡vel
     real soma, mult, valorA, valorB, valorC, resultado
     //consultando dados
-    escreva("Digite o primeiro número: ")
+    escreva("Digite o primeiro nÃºmero: ")
     leia(valorA)
 
-    escreva("Digite o segundo número: ")
+    escreva("Digite o segundo nÃºmero: ")
     leia(valorB)
 
     //calculando
