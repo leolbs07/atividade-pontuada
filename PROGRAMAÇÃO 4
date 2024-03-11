@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
   // Declarando variáveis.
-  real preco, kg, morangoKg, macaKg, mult1, mult2, mult3, mult4, pedido, reais
+  real precoMorango, kg, morangoKg, macaKg, quiloTt, precoMaca, precoTt, compraTt
 
 
   // Tabela de preços.
@@ -17,8 +17,34 @@ programa {
     escreva("Quantos quilos de maçã você deseja? ")
     leia(macaKg)
 
-    // Realizando cálculos 
+    // Realizando cálculos .
+    quiloTt = morangoKg + macaKg
 
-    mult1 = macaKg * 1.80 reais
+    // Resolução.
+    se (morangoKg > 5) {
+      precoMorango = morangoKg * 2.2
+    } 
+    senao {precoMaca = macaKg * 1.8
+    } 
+    se (morangoKg > 5) {
+      precoMorango = morangoKg * 2.2
+    }
+    senao {
+      precoMorango = morangoKg * 2.5
+    }
+    precoTt = precoMorango + precoMaca
+
+
+    escreva("\nMaçâs compradas: ", macaKg, " kg")
+    escreva("\nMmorangos comprados: ", morangoKg, " kg")
+    escreva("\nTotal de quilos comprados: ", quiloTt, " kg")
+    se (precoTt > 25 ou quiloTt > 8) {
+      compraTt = precoTt - (precoTt * 0.1)
+      escreva("\nTotal da compra (com desconto): R$", compraTt, " reais")
+    } senao {
+      compraTt = precoTt
+      escreva("\nTotal da compra (sem desconto): R$", compraTt, " reais")
+    }
+    
   }
 }
