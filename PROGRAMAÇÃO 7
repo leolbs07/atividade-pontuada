@@ -1,0 +1,31 @@
+programa {
+  funcao inicio() {
+    // Declarando variáveis.
+    cadeia produto 
+    inteiro quatidadeAqd, total
+    real preco, resultado, desconto 
+
+    // Pedindo informações.
+    escreva("Qual o produto deseja? ")
+    leia(produto)
+    escreva("quantas unidades? ")
+    leia(quatidadeAqd)
+    escreva("Qual o valor? ")
+    leia(preco)
+
+    // Resultado da operação.
+    se (quatidadeAqd <= 5) { desconto = preco * 0.02
+    total = quatidadeAqd * preco
+    resultado = total - desconto
+    escreva("O valor do produto é: ", resultado)
+    } senao se (quatidadeAqd > 5 e quatidadeAqd <= 10) { desconto = preco * 0.03
+    total = quatidadeAqd * preco
+    resultado = total - desconto
+    escreva("O valor do produto é: ", resultado)
+    } senao se (quatidadeAqd > 10) { desconto = preco * 0.05
+    total = quatidadeAqd * preco
+    resultado = total - desconto
+    escreva("O valor do produto é: ", resultado)
+    }
+  }
+}
