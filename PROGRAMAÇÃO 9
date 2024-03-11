@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+    // Declarandol variáveis.
+    real rendaMensal, emprestimo, prestacao, prestacaoTt
+    inteiro parcelas 
+
+    // Pedindo informações.
+    escreva("Informe a sua renda: ")
+    leia(rendaMensal)
+    escreva("Informe o valor do emprestimo: ")
+    leia(emprestimo)
+
+    // Resolvendo problemas.
+    se (emprestimo < rendaMensal * 10) {
+      escreva("Emprestimo aprovado!")
+      escreva("\nDividir em quanstas parcelas: ")
+      leia(parcelas)
+
+    // Cálculos.
+    prestacao = emprestimo * 0.3
+     prestacaoTt = prestacao / parcelas
+     escreva("Valor das parcelas: R$", prestacaoTt)
+    } senao {
+      escreva("Emprestimo recusado!")
+    }
+
+  }
+}
