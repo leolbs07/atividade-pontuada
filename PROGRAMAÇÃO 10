@@ -1,0 +1,37 @@
+programa {
+  funcao inicio() {
+    // Declarando variáveis.
+    real precoA = 0, precoG = 0, litroA = 0, litroG = 0, totalA = 0, totalG = 0, valor = 0
+    inteiro combustivelA = 0, combustivelG = 0
+
+   // Exibindo tabela.
+   escreva("Álcool\nAté 25 litros, desconto de 2% por litro\nAcima de 25 litros, desconto de 4% por litro\t\n\nGasolina\nAté 25 litros, desconto de 3% por litro\nAcima de 25 litros, desconto de 5% por litro")
+   
+   // Pedindo informações.
+   escreva("\n\nQuantos litros(L) de alcool deseja: ")
+   leia(combustivelA)
+   escreva("\n\nQuantos litros(L) de gasolina deseja: ")
+   leia(combustivelG)
+
+   // Cálculos.
+   precoA = combustivelA * 6.59
+   precoG = combustivelG * 3.79
+
+   se (combustivelA <= 25) {
+    totalA = precoA - (precoA * 0.02)
+   } senao se (litroA > 25) {
+    totalA = precoA - (precoA * 0.04)
+   }
+
+   se (litroG <= 25) {
+    totalG = precoG - (precoG * 0.03)
+   } senao se (litroG > 25) {
+    totalG = precoG - (precoG * 0.05)
+   }
+   valor = totalA + totalG
+   escreva("\nTotal a pagar: R$", valor)
+
+
+   
+  }
+}
