@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    // Declaração de variavel
+    // DeclaraÃ§Ã£o de variavel
   cadeia nome
   cadeia estadoCivil
   cadeia casada
