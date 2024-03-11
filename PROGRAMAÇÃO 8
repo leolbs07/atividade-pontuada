@@ -1,0 +1,30 @@
+programa {
+  funcao inicio() {
+    // Declarandp variáveis .
+    real cdVerde, cdAzul, cdAmarelo, cdVermelho, preco, cd
+    
+    // Exibindo tabela.
+    escreva("\t\tCor\t\t\t\t\t\t\t\tPreço\n\t\t1-Verde\t\t\t\t\tR$\t10,00\n\t\t2-Azul\t\t\t\t\tR$\t20,00\n\t\t3-Amarelo\t\t\t\tR$\t30,00\n\t\t4-Vermelho\t\t\tR$\t40,00\n\n")
+
+    // Pedindo informações.
+    escreva("Qual número do CD você deseja? ")
+    leia(cd)
+
+    // Realizando casos.
+    escolha(cd) {
+      caso 1:
+      escreva("O CD verde custa R$ 10,00 ", cdVerde)
+      pare
+      caso 2:
+      escreva("O CD azul custa R$ 20,00 ", cdAzul)
+      pare
+      caso 3:
+      escreva("O CD amarelo custa R$ 30,00 ", cdAmarelo)
+      pare
+      caso 4:
+      escreva("O CD vermelho custa R$ 40,00 ", cdVermelho)
+
+    }
+    
+  }
+}
